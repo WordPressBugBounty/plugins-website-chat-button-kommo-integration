@@ -1,0 +1,12 @@
+{
+  "require": {
+    "php": ">=7.4",
+    "ext-gettext": "*",
+    "amocrm/amocrm-api-library": "1.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "WebsiteChatButtonKommoIntegration\\": "src"
+    }
+  }
+}

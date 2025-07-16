@@ -1,0 +1,372 @@
+# Copyright (C) 2024 Kommo
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Website Chat Button: Kommo integration 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/website-chat-button-kommo-integration\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-01-12T09:15:27+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: website-chat-button-kommo-integration\n"
+
+#. Author URI of the plugin
+msgid "https://www.kommo.com/"
+msgstr "https://www.kommo.com/"
+
+#. Author of the plugin
+msgid "Kommo"
+msgstr "Kommo"
+
+#. Description of the plugin
+msgid "Let your customers contact you directly from your website with a chat button, conveniently manage all interactions through Kommo."
+msgstr "Дайте своим клиентам возможность связаться с вами напрямую с помощью кнопки чата и с легкостью управляйте всеми диалогами в Kommo."
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/website-chat-button-kommo-integration/"
+msgstr "https://ru.wordpress.org/plugins/website-chat-button-kommo-integration/"
+
+#. Plugin Name of the plugin
+msgid "Website Chat Button: Kommo integration"
+msgstr "Кнопка чата на сайте - Интеграция Kommo"
+
+#: dashboard.php:10
+msgid "test text dashboard"
+msgstr "тестовый текст виджета"
+
+#: dashboard.php:16
+msgid "Website Chat Button: Kommo integration Widget 0"
+msgstr "комо быстрый виджет"
+
+msgid "The Kommo server is not responding"
+msgstr "Сервер Kommo не отвечает"
+
+msgid "We’re aware of the issue and are working to fix it"
+msgstr "Мы в курсе проблемы и работаем над ее устранением"
+
+msgid "Plugin error"
+msgstr "Ошибка плагина"
+
+msgid "Are you sure you want to deactivate"
+msgstr "Вы уверены, что хотите деактивировать"
+
+msgid "PHP Error"
+msgstr "Ошибка PHP"
+
+msgid "Plugin not ready to work. Autoload not exist"
+msgstr "Плагин не готов к работе. Автозагрузчик не найден"
+
+msgid "Plugin not ready to work. Configuration not found"
+msgstr "Плагин не готов к работе. Конфигурация не найдена"
+
+msgid "Script not found. Button not allowed on public pages"
+msgstr "Скрипт не найден. Кнопка не будет отображаться на страницах сайта"
+
+#: plugin_page/home_page/index.php:61
+msgid "Try again"
+msgstr "Попробовать снова"
+
+msgid "Days left in your trial. "
+msgstr "дней осталось в вашей пробной версии. "
+
+msgid "Subscribe"
+msgstr "Купить подписку"
+
+#: plugin_page/home_page/index.php:84
+msgid "Your website chat button is installed and active!"
+msgstr "Кнопка чата на вашем сайте готова к использованию!"
+
+#: plugin_page/home_page/index.php:85
+msgid "Now you can easily:"
+msgstr "Теперь вы с легкостью можете:"
+
+#: plugin_page/home_page/index.php:86
+msgid "Add your favorite channels"
+msgstr "Добавить ваши любимые каналы"
+
+#: plugin_page/home_page/index.php:87
+msgid "Customize your chat button"
+msgstr "Персонализировать кнопку чата"
+
+#: plugin_page/home_page/index.php:88
+msgid "Automate sales with the bot"
+msgstr "Автоматизировать продажи с ботом"
+
+#: plugin_page/home_page/index.php:89
+#: plugin_page/index.php:52
+#: plugin_page/index.php:67
+msgid "Got it"
+msgstr "Понятно"
+
+#: plugin_page/home_page/index.php:100
+msgid "Want to log out?"
+msgstr "Хотите выйти?"
+
+#: plugin_page/home_page/index.php:101
+msgid "This will remove the chat button from your website."
+msgstr "Это уберет кнопку чата с вашего сайта."
+
+#: plugin_page/home_page/index.php:103
+#: plugin_page/home_page/index.php:130
+#: plugin_page/home_page/index.php:141
+#: plugin_page/home_page/index.php:535
+msgid "Log out"
+msgstr "Выйти"
+
+#: plugin_page/home_page/index.php:104
+#: plugin_page/home_page/index.php:118
+msgid "Cancel"
+msgstr "Отменить"
+
+#: plugin_page/home_page/index.php:114
+msgid "Want to turn off the"
+msgstr "Хотите отключить"
+
+#: plugin_page/home_page/index.php:114
+msgid "chat button?"
+msgstr "кнопку чата?"
+
+#: plugin_page/home_page/index.php:115
+msgid "This will remove the chat button "
+msgstr "Это уберет кнопку чата с вашего сайта."
+
+#: plugin_page/home_page/index.php:115
+msgid "from your website."
+msgstr " "
+
+#: plugin_page/home_page/index.php:117
+msgid "Turn Off"
+msgstr "Отключить"
+
+#: plugin_page/home_page/index.php:128
+msgid "Oops, it seems like you’ve deleted all your chat buttons"
+msgstr "Упс, похоже, вы удалили все свои кнопки чата"
+
+#: plugin_page/home_page/index.php:129
+#: plugin_page/home_page/index.php:140
+msgid "To create a new button, log out of your Kommo account, then log back in again."
+msgstr "Для создания новой кнопки выходите из своей учетной записи Kommo и войдите снова."
+
+#: plugin_page/home_page/index.php:139
+msgid "Oops, it seems like you've deleted all your chat buttons"
+msgstr "Упс, похоже, вы удалили все свои кнопки чата"
+
+#: plugin_page/home_page/index.php:164
+msgid "Your free trial is over"
+msgstr "Пробная версия истекла"
+
+msgid "Select plan"
+msgstr "Выбрать подписку"
+
+#: plugin_page/home_page/index.php:165
+msgid "You can still view and export your account data. To maintain full access, consider upgrading your account to one of our paid subscription plans."
+msgstr "Вы всё ещё можете просматривать и экспортировать данные своей учётной записи. Для возвращения полного доступа выберите платную подписку."
+
+#: plugin_page/home_page/index.php:174
+msgid "You have saved chat buttons available!"
+msgstr "У вас сохранились предыдущие кнопки чата!"
+
+#: plugin_page/home_page/index.php:175
+msgid "Choose a chat button from your Kommo account to install on your website."
+msgstr "Выберите нужную из своего аккаунта Kommo и установите на сайте."
+
+#: plugin_page/home_page/index.php:177
+msgid "Select button"
+msgstr "Выберите кнопку"
+
+#: plugin_page/home_page/index.php:177
+msgid "WordPress button"
+msgstr "WordPress кнопка"
+
+#: plugin_page/home_page/index.php:200
+msgid "Next"
+msgstr "Установить"
+
+#: plugin_page/home_page/index.php:201
+msgid "Create new chat button"
+msgstr "Создать новую кнопку"
+
+#: plugin_page/home_page/index.php:230
+msgid "Your Client ID:"
+msgstr "Номер клиента:"
+
+#: plugin_page/home_page/index.php:237
+#: plugin_page/index.php:105
+msgid "Unified inbox"
+msgstr "Unified inbox"
+
+#: plugin_page/home_page/index.php:238
+msgid "No more app switching, no more lost conversations — centralize all your business communications in a single tab."
+msgstr "Больше не нужно переключаться между приложениями - объедините всю деловую переписку в одном месте."
+
+#: plugin_page/home_page/index.php:255
+msgid "Try your"
+msgstr "Попробуйте"
+
+#: plugin_page/home_page/index.php:255
+msgid "website chat button"
+msgstr "кнопку чата на сайте"
+
+#: plugin_page/home_page/index.php:255
+msgid "to see how leads flow directly to your inbox."
+msgstr "- и вы увидите, как заявки сразу попадают к вам в inbox."
+
+#: plugin_page/home_page/index.php:257
+msgid "Go to inbox"
+msgstr "Перейти в inbox"
+
+#: plugin_page/home_page/index.php:273
+msgid "Сustomize your website chat button"
+msgstr "Персонализируйте свою кнопку чата на сайте"
+
+#: plugin_page/home_page/index.php:274
+msgid "Add your favorite channels, designing each button with a style authentic to your brand's unique identity."
+msgstr "Добавьте любимые каналы коммуникации и придайте каждой кнопке стиль, который органично дополнит образ вашего бренда."
+
+#: plugin_page/home_page/index.php:275
+msgid "Start customizing"
+msgstr "Начать персонализацию"
+
+#: plugin_page/home_page/index.php:287
+msgid "Create templates & build code-free chatbots"
+msgstr "Создавайте шаблоны и боты code-free"
+
+#: plugin_page/home_page/index.php:288
+msgid "Send personalized templates with a single click or use bots for efficient workflows (no coding skills required!)"
+msgstr "Отправляйте шаблоны сообщений одним кликом либо используйте ботов для повышения эффективности (без навыков кода)"
+
+#: plugin_page/home_page/index.php:289
+msgid "Build your first bot"
+msgstr "Создать своего первого бота"
+
+#: plugin_page/home_page/index.php:309
+msgid "Help Center"
+msgstr "Помощь"
+
+#: plugin_page/home_page/index.php:325
+msgid "Chat with support"
+msgstr "Чат с поддержкой"
+
+#: plugin_page/home_page/index.php:343
+msgid "Book a free 1:1 demo"
+msgstr "Бесплатное демо"
+
+#: plugin_page/home_page/index.php:358
+msgid "Hire an expert partner"
+msgstr "Нанять партнера"
+
+#: plugin_page/home_page/index.php:528
+msgid "Turn Off Chat Button"
+msgstr "Отключить кнопку чата"
+
+#: plugin_page/home_page/index.php:529
+msgid "Turn On Chat Button"
+msgstr "Включить кнопку чата"
+
+#: plugin_page/home_page/index.php:627
+msgid "Logout failed. Try again"
+msgstr "Выход из системы не удался. Попробуйте еще раз"
+
+#: plugin_page/home_page/index.php:628
+msgid "Logout failed. Server Error. Connect with support Team"
+msgstr "Выход из системы не удался. Ошибка сервера. Свяжитесь с командой поддержки"
+
+#: plugin_page/home_page/index.php:629
+msgid "Wordpress logout Error. Try again"
+msgstr "Ошибка WordPress при выходе. Попробуйте еще раз"
+
+#: plugin_page/home_page/index.php:890
+msgid "You have "
+msgstr "У вас "
+
+msgid " unread message"
+msgstr " непрочитанных сообщений"
+
+msgid " unread message 1"
+msgstr " непрочитанное сообщение"
+
+msgid " unread message 2"
+msgstr " непрочитанных сообщения"
+
+#: plugin_page/home_page/index.php:897
+msgid "You have no unread messages"
+msgstr "У вас нет непрочитанных сообщений"
+
+#: plugin_page/index.php:44
+msgid "Oops, something went %s wrong with your sign up..."
+msgstr "Упс, при регистрации что- %s то пошло не так..."
+
+#: plugin_page/index.php:46
+#: plugin_page/index.php:61
+msgid "Try again or contact "
+msgstr "Попробуйте еще раз или обратитесь за помощью в "
+
+#: plugin_page/index.php:48
+#: plugin_page/index.php:63
+msgid "our support team"
+msgstr "нашу службу поддержки."
+
+#: plugin_page/index.php:50
+#: plugin_page/index.php:65
+msgid " for assistance."
+msgstr " "
+
+#: plugin_page/index.php:59
+msgid "Oops, something went wrong with your log in..."
+msgstr "Упс, при входе что-то пошло не так..."
+
+#: plugin_page/index.php:74
+msgid "Easily customize the button to reflect your brand’s identity."
+msgstr "С легкостью настройте кнопку под свой бренд."
+
+#: plugin_page/index.php:84
+msgid "Never lose a conversation - one inbox, full visibility on every client."
+msgstr "Все сообщения в одном inbox - ни одного упущенного клиента."
+
+#: plugin_page/index.php:106
+msgid "Centralize all your business %s communications in a single tab."
+msgstr "Соберите всю деловую переписку %s в одном месте."
+
+#: plugin_page/index.php:194
+msgid "Already have an account?"
+msgstr "Уже есть аккаунт?"
+
+msgid "Log in"
+msgstr "Войти"
+
+msgid "Sign up"
+msgstr "Создать"
+
+msgid "You don’t have any chat buttons yet."
+msgstr "У вас пока нет кнопок чата."
+
+msgid "Log out of your Kommo account, then log back in to automatically generate a new chat button."
+msgstr "Выйдите из своего аккаунта Kommo и войдите обратно - система автоматически создаст новую кнопку чата."
+
+msgid "Your account has chat buttons ready to use"
+msgstr "В вашем аккаунте есть сохранные кнопки чата"
+
+msgid "Choose an existing button or design a new one to install on your website."
+msgstr "Выберите существующую кнопку или создайте новую для размещения на своем сайте."
+
+msgid "You’re about to log out"
+msgstr "Вы собираетесь выйти из аккаунта"
+
+msgid "When you log back in, a chat button will be automatically created."
+msgstr "После повторного входа кнопка чата будет создана автоматически."
+
+msgid "By signing up, you agree to our"
+msgstr "Подписываясь, вы соглашаетесь с нашими"
+
+msgid "Terms of Service"
+msgstr "Условиями предоставления услуг"
+
+msgid "and"
+msgstr "и"
+
+msgid "Privacy Policy"
+msgstr "Политикой конфиденциальности"

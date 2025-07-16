@@ -1,0 +1,318 @@
+@media (max-width: 767px) {
+    /*-----------*/
+    .error-window .img{
+        margin: 138px 0 0 0;
+    }
+    .error-window h1{
+        margin: 32px 0 0 0;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 120%;
+    }
+    .error-window h3{
+        margin: 16px 0 0 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 160%; 
+        padding: 0 20px;
+    }
+    .error-window button{
+        margin: 32px auto;
+        display: flex;
+        width: 240px;
+        height: 50px;
+        padding: 18px 24px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 100px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 90%;
+    }
+    .overlay.active{
+        /* height: calc(100vh - 46px); */
+    }
+    .content{
+        display: block;
+        height: calc(50vh - 16px);
+    }
+    .error-registration.active{
+        padding: 60px 10px;
+        width: 288px;
+    }
+    .error-login.active{
+        padding: 60px 10px;
+        width: 288px;
+    }
+    .trial-is-over.active{
+        padding: 60px 10px;
+        width: 288px;
+    }
+    .info-block{
+        display: none;
+    }
+    .content-block{
+        width: 100%;
+        height: 100%;
+    }
+    .auth-form{
+        margin-top: 10vh;
+    }
+    .img-face-arrow{
+        display: none;
+    }
+    .img-face-Email-mobile {
+        display: block;
+        margin: 5vh auto;
+    width: 168px;
+    }
+}
+@media (max-width: 782px) {
+    .auto-fold #wpcontent{
+        padding-left: unset;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    /*-----------*/
+    .error-window h1{
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 130%;
+    }
+    .error-window h3{
+        margin: 16px 0 0 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 160%; 
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+    }
+    .content-block {
+        width: 100%;
+        height: calc(50vh - 16px);
+    }
+    .auth-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      order: -1;
+      position: relative;
+    }
+    .auth-form{
+        margin-top: 0;
+    }
+    .info-block{
+        display: flex;
+    }
+    .info-block-preview-1{
+        width: 50%;
+        height: 100%;
+    }
+    .info-block-preview-2{
+        width: 50%;
+        height: 100%;
+    }
+    .img-setting-block {
+        /* top: 11vh;
+        left: unset;
+        right: 6vw; */
+        top: calc(15% + 70px);
+        left: unset;
+        bottom: unset;
+        right: calc(2vw + 30px);
+        width: 286px;
+    }
+    .img-chat {
+        /* top: 3vh;
+        left: unset;
+        right: 3vw; */
+        top: 15%;
+        left: unset;
+        bottom: unset;
+        right: calc(2vw);
+        width: 195px;
+    }
+
+    .info-block-preview-1 .text-element {
+        /* left:  unset;
+        right: 0;
+        bottom: unset;
+        top: 33.5vh; */
+        top: calc(15% + 291px);
+        left: unset;
+        bottom: unset;
+        right: -2vw;
+        display: flex;
+        width: 342px;
+    }
+    .info-block-preview-1 .text-element p{
+        width: 320px;
+    }
+    .info-block-preview-1 .text-element span{
+        order: -1;
+        left: 5vw;
+        margin-top: 1px;
+        bottom: 9.5px;
+    }
+    .img-face-star{
+        transform: scaleX(-1);
+        top: 21vh;
+        left: unset;
+        right: -100px;
+        z-index: 7;
+        width: 130px;
+    }
+    .img-Yellow-Frame{
+        width: 356px;
+        bottom: 3vh;
+        left: 6vw;
+        top: unset;
+    }
+    .img-face-Email {
+        display: none;
+    }
+    .img-face-Email-mobile {
+        display: block;
+    }
+    .info-block-preview-2 .text-element p {
+        width: 320px;
+    }
+    .info-block-preview-2 .text-element {
+        left: 1vw;
+        top: 13vh;
+    }
+    .img-face-arrow {
+        position: relative;
+        width: 121px;
+        /* margin-top: -12vw; */
+        right: unset;
+        left: -230px;
+        top: -10px;
+    }
+    .img-face-Email-mobile {
+        position: absolute;
+        width: 121px;
+        right: 40%;
+        bottom: -14vh;
+    }
+    .auth-block .sign-up {
+        width: 210px;
+    }
+  }
+@media (min-width: 1200px) and (max-width: 1440px) {
+    .info-block-preview-1{
+        height: 57%;
+    }
+    .info-block-preview-2{
+        height: 43%;
+    }
+}
+@media (min-width: 1920px) {
+    .info-block-preview-2 .text-element {
+        position: absolute;
+        top: 15px;
+        left: calc(10vw);
+    }
+    .img-Yellow-Frame {
+        position: absolute;
+        top: 136px;
+        left: calc(10vw + 100px);
+    }
+    .img-face-Email {
+        position: absolute;
+        top: 169px;
+        left: calc(10vw - 80px);
+        max-width: 165px;
+    }
+
+    .text-element span {
+        width: 30px;
+        height: 30px;
+        bottom: 15px;
+    }
+    
+    .info-block-preview-1 .text-element {
+        position: absolute;
+        bottom: 315px;
+        left: calc(10vw + 201px);
+        top: unset;
+        right: unset;
+    }
+    .img-setting-block{
+        position: absolute;
+        bottom: 5px;
+        left: calc(10vw - 45px);
+        top: unset;
+        right: unset;
+    }
+    .img-chat {
+        position: absolute;
+        bottom: 51px;
+        left: calc(10vw + 176px);
+        top: unset;
+        right: unset;
+    }
+    .img-face-star {
+        position: absolute;
+        bottom: 216px;
+        left: calc(10vw);
+        top: unset;
+        right: unset;
+    }
+}
+@media (min-width: 2560px) {
+    .info-block-preview-2 .text-element {
+        position: absolute;
+        top: 15px;
+        left: calc(15vw);
+    }
+    .img-Yellow-Frame {
+        position: absolute;
+        top: 136px;
+        left: calc(15vw + 100px);
+    }
+    .img-face-Email {
+        position: absolute;
+        top: 169px;
+        left: calc(15vw - 80px);
+        max-width: 165px;
+    }
+
+    .text-element span {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+    }
+    
+    .info-block-preview-1 .text-element {
+        position: absolute;
+        bottom: 315px;
+        left: calc(15vw + 201px);
+        top: unset;
+        right: unset;
+    }
+    .img-setting-block{
+        position: absolute;
+        bottom: 5px;
+        left: calc(15vw - 45px);
+        top: unset;
+        right: unset;
+    }
+    .img-chat {
+        position: absolute;
+        bottom: 51px;
+        left: calc(15vw + 176px);
+        top: unset;
+        right: unset;
+    }
+    .img-face-star {
+        position: absolute;
+        bottom: 216px;
+        left: calc(15vw);
+        top: unset;
+        right: unset;
+    }
+}

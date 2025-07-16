@@ -1,0 +1,367 @@
+# Copyright (C) 2024 Kommo
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Website Chat Button: Kommo integration 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/website-chat-button-kommo-integration\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Turkish <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-01-12T09:15:27+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: website-chat-button-kommo-integration\n"
+
+#. Author URI of the plugin
+msgid "https://www.kommo.com/"
+msgstr "https://www.kommo.com/"
+
+#. Author of the plugin
+msgid "Kommo"
+msgstr "Kommo"
+
+#. Description of the plugin
+msgid "Let your customers contact you directly from your website with a chat button, conveniently manage all interactions through Kommo."
+msgstr "Müşterilerinizin web siteniz üzerinden sizle iletişime geçmesini sağlayan bir sohbet tuşu ekleyin ve tüm etkileşimleri Kommo ile yönetin."
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/website-chat-button-kommo-integration/"
+msgstr "https://wordpress.org/plugins/website-chat-button-kommo-integration/"
+
+#. Plugin Name of the plugin
+msgid "Website Chat Button: Kommo integration"
+msgstr "Web Sitesi Sohbet Tuşu: Kommo entegrasyonu"
+
+#: dashboard.php:10
+msgid "test text dashboard"
+msgstr "Test metni kontrol paneli"
+
+#: dashboard.php:16
+msgid "Website Chat Button: Kommo integration Widget 0"
+msgstr "Web Sitesi Sohbet Tuşu: Kommo entegrasyonu Widget 0"
+
+msgid "The Kommo server is not responding"
+msgstr "Kommo sunucusu yanıt vermiyor"
+
+msgid "We’re aware of the issue and are working to fix it"
+msgstr "Sorunun farkındayız ve çözmek için çalışıyoruz"
+
+msgid "Plugin error"
+msgstr "Plugin hatası"
+
+msgid "Are you sure you want to deactivate"
+msgstr "Devre dışı bırakmak istediğinizden emin misiniz?"
+
+msgid "PHP Error"
+msgstr "PHP Hatası"
+
+msgid "Plugin not ready to work. Autoload not exist"
+msgstr "Plugin çalışmaya hazır değil. Otomatik yükleme mevcut değil"
+
+msgid "Plugin not ready to work. Configuration not found"
+msgstr "Plugin çalışmaya hazır değil. Yapılandırma bulunamadı"
+
+msgid "Script not found. Button not allowed on public pages"
+msgstr "Script bulunamadı. Tuş, herkese açık sayfalarda kullanılamaz."
+
+#: plugin_page/home_page/index.php:61
+msgid "Try again"
+msgstr "Tekrar deneyin"
+
+msgid "Days left in your trial. "
+msgstr "Kadar deneme sürenizde gün kalmıştır."
+
+msgid "Subscribe"
+msgstr "Abone ol"
+
+#: plugin_page/home_page/index.php:84
+msgid "Your website chat button is installed and active!"
+msgstr "Web sitesi sohbet tuşunuz kuruldu ve aktif!"
+
+#: plugin_page/home_page/index.php:85
+msgid "Now you can easily:"
+msgstr "Artık kolayca:"
+
+#: plugin_page/home_page/index.php:86
+msgid "Add your favorite channels"
+msgstr "Favori kanallarınızı ekleyin"
+
+#: plugin_page/home_page/index.php:87
+msgid "Customize your chat button"
+msgstr "Sohbet tuşunuzu kişiselleştirin"
+
+#: plugin_page/home_page/index.php:88
+msgid "Automate sales with the bot"
+msgstr "Satışlarınızı bot ile otomatikleştirin"
+
+#: plugin_page/home_page/index.php:89
+#: plugin_page/index.php:52
+#: plugin_page/index.php:67
+msgid "Got it"
+msgstr "Anladım"
+
+#: plugin_page/home_page/index.php:100
+msgid "Want to log out?"
+msgstr "Çıkış yapmak mı istiyorsunuz?"
+
+#: plugin_page/home_page/index.php:101
+msgid "This will remove the chat button from your website."
+msgstr "Bu, sohbet tuşunu web sitenizden kaldıracaktır."
+
+#: plugin_page/home_page/index.php:103
+#: plugin_page/home_page/index.php:130
+#: plugin_page/home_page/index.php:141
+#: plugin_page/home_page/index.php:535
+msgid "Log out"
+msgstr "Çıkış yap"
+
+#: plugin_page/home_page/index.php:104
+#: plugin_page/home_page/index.php:118
+msgid "Cancel"
+msgstr "İptal"
+
+#: plugin_page/home_page/index.php:114
+msgid "Want to turn off the"
+msgstr "Sohbet tuşunu"
+
+#: plugin_page/home_page/index.php:114
+msgid "chat button?"
+msgstr "kapatmak istiyor musunuz?"
+
+#: plugin_page/home_page/index.php:115
+msgid "This will remove the chat button "
+msgstr "Bu, sohbet tuşunu"
+
+#: plugin_page/home_page/index.php:115
+msgid "from your website."
+msgstr "web sitenizden kaldıracaktır."
+
+#: plugin_page/home_page/index.php:117
+msgid "Turn Off"
+msgstr "Kapat"
+
+#: plugin_page/home_page/index.php:128
+msgid "Oops, it seems like you’ve deleted all your chat buttons"
+msgstr "Oops, tüm sohbet tuşlarınızı silmiş görünüyorsunuz."
+
+#: plugin_page/home_page/index.php:129
+#: plugin_page/home_page/index.php:140
+msgid "To create a new button, log out of your Kommo account, then log back in again."
+msgstr "Yeni bir sohbet tuşu oluşturmak için Kommo hesabınızdan çıkış yapın, ardından tekrar giriş yapın."
+
+#: plugin_page/home_page/index.php:139
+msgid "Oops, it seems like you've deleted all your chat buttons"
+msgstr "Oops, tüm sohbet tuşlarınızı silmiş görünüyorsunuz."
+
+#: plugin_page/home_page/index.php:164
+msgid "Your free trial is over"
+msgstr "Ücretsiz deneme sürümünüz bitmiştir"
+
+msgid "Select plan"
+msgstr "Plan seçin"
+
+#: plugin_page/home_page/index.php:165
+msgid "You can still view and export your account data. To maintain full access, consider upgrading your account to one of our paid subscription plans."
+msgstr "Hâlâ hesap verilerinizi görüntüleyebilir ve dışa aktarabilirsiniz. Tam erişimi korumak için hesabınızı ücretli bir abonelik planına yükseltmeyi düşünün"
+
+#: plugin_page/home_page/index.php:174
+msgid "You have saved chat buttons available!"
+msgstr "Kullanılabilir kayıtlı sohbet tuşlarınız var!"
+
+#: plugin_page/home_page/index.php:175
+msgid "Choose a chat button from your Kommo account to install on your website."
+msgstr "Web sitenize kurmak için Kommo hesabınızdan bir sohbet tuşu seçin."
+
+#: plugin_page/home_page/index.php:177
+msgid "Select button"
+msgstr "Tuş seçin."
+
+#: plugin_page/home_page/index.php:177
+msgid "WordPress button"
+msgstr "WordPress tuşu"
+
+#: plugin_page/home_page/index.php:200
+msgid "Next"
+msgstr "Sonraki"
+
+#: plugin_page/home_page/index.php:201
+msgid "Create new chat button"
+msgstr "Yeni sohbet tuşu oluştur."
+
+#: plugin_page/home_page/index.php:230
+msgid "Your Client ID:"
+msgstr "Müşteri Kimlik Numaranız:"
+
+#: plugin_page/home_page/index.php:237
+#: plugin_page/index.php:105
+msgid "Unified inbox"
+msgstr "Birleşik gelen kutusu"
+
+#: plugin_page/home_page/index.php:238
+msgid "No more app switching, no more lost conversations — centralize all your business communications in a single tab."
+msgstr "Artık uygulamalar arasında geçiş yapmaya veya konuşmaları kaybetmeye son! Tüm iş iletişiminizi tek bir sekmeden yönetin."
+
+#: plugin_page/home_page/index.php:255
+msgid "Try your"
+msgstr "Sohbet tuşunuzu"
+
+#: plugin_page/home_page/index.php:255
+msgid "website chat button"
+msgstr "deneyin ve"
+
+#: plugin_page/home_page/index.php:255
+msgid "to see how leads flow directly to your inbox."
+msgstr "potansiyel müşterilerin doğrudan gelen kutunuza akışını görün."
+
+#: plugin_page/home_page/index.php:257
+msgid "Go to inbox"
+msgstr "Gelen kutusuna git"
+
+#: plugin_page/home_page/index.php:273
+msgid "Сustomize your website chat button"
+msgstr "Web sitesi sohbet tuşunuzu kişiselleştirin."
+
+#: plugin_page/home_page/index.php:274
+msgid "Add your favorite channels, designing each button with a style authentic to your brand's unique identity."
+msgstr "Favori kanallarınızı ekleyin ve her tuşu markanızın benzersiz kimliğine uygun bir şekilde tasarlayın."
+
+#: plugin_page/home_page/index.php:275
+msgid "Start customizing"
+msgstr "Kişiselleştirmeye başla."
+
+#: plugin_page/home_page/index.php:287
+msgid "Create templates & build code-free chatbots"
+msgstr "Şablonlar ve kod gerektirmeyen chatbotlar oluşturun."
+
+#: plugin_page/home_page/index.php:288
+msgid "Send personalized templates with a single click or use bots for efficient workflows (no coding skills required!)"
+msgstr "Tek bir tıklamayla kişiselleştirilmiş şablonlar gönderin veya verimli iş akışları için botları kullanın (kodlama becerisi gerektirmez!)"
+
+#: plugin_page/home_page/index.php:289
+msgid "Build your first bot"
+msgstr "İlk botunuzu oluşturun"
+
+#: plugin_page/home_page/index.php:309
+msgid "Help Center"
+msgstr "Yardım Merkezi"
+
+#: plugin_page/home_page/index.php:325
+msgid "Chat with support"
+msgstr "Destek ekibiyle sohbet edin"
+
+#: plugin_page/home_page/index.php:343
+msgid "Book a free 1:1 demo"
+msgstr "Ücretsiz, birebir demo rezervasyonu yapın"
+
+#: plugin_page/home_page/index.php:358
+msgid "Hire an expert partner"
+msgstr "Bir uzman partner tutun"
+
+#: plugin_page/home_page/index.php:528
+msgid "Turn Off Chat Button"
+msgstr "Sohbet tuşunu kapat"
+
+#: plugin_page/home_page/index.php:529
+msgid "Turn On Chat Button"
+msgstr "Sohbet tuşunu aç"
+
+#: plugin_page/home_page/index.php:627
+msgid "Logout failed. Try again"
+msgstr "Çıkış başarısız oldu. Tekrar deneyin"
+
+#: plugin_page/home_page/index.php:628
+msgid "Logout failed. Server Error. Connect with support Team"
+msgstr "Çıkış başarısız oldu. Sunucu hatası. Destek ekibiyle iletişime geçin"
+
+#: plugin_page/home_page/index.php:629
+msgid "Wordpress logout Error. Try again"
+msgstr "WordPress çıkış hatası. Tekrar deneyin"
+
+#: plugin_page/home_page/index.php:890
+msgid "You have "
+msgstr "Okunmamış"
+
+#: plugin_page/home_page/index.php:890
+msgid " unread message"
+msgstr "mesajınız var"
+
+#: plugin_page/home_page/index.php:897
+msgid "You have no unread messages"
+msgstr "Okunmamış mesajınız yok"
+
+#: plugin_page/index.php:44
+msgid "Oops, something went %s wrong with your sign up..."
+msgstr "Kayıt olurken %s bir hata oluştu..."
+
+#: plugin_page/index.php:46
+#: plugin_page/index.php:61
+msgid "Try again or contact "
+msgstr "Tekrar deneyin veya  "
+
+#: plugin_page/index.php:48
+#: plugin_page/index.php:63
+msgid "our support team"
+msgstr "yardım için destek ekibimizle"
+
+#: plugin_page/index.php:50
+#: plugin_page/index.php:65
+msgid " for assistance."
+msgstr "iletişime geçin."
+
+#: plugin_page/index.php:59
+msgid "Oops, something went wrong with your log in..."
+msgstr "Giriş yaparken bir hata oluştu..."
+
+#: plugin_page/index.php:74
+msgid "Easily customize the button to reflect your brand’s identity."
+msgstr "Tuşu markanızın kimliğini yansıtacak şekilde kolayca kişiselleştirin."
+
+#: plugin_page/index.php:84
+msgid "Never lose a conversation - one inbox, full visibility on every client."
+msgstr "Hiçbir konuşmayı kaçırmayın! Tek bir gelen kutusunda her müşteriye tam görünüm sağlayın"
+
+#: plugin_page/index.php:106
+msgid "Centralize all your business %s communications in a single tab."
+msgstr "Tüm iş %s iletişimlerinizi tek bir sekmeden yönetin."
+
+#: plugin_page/index.php:194
+msgid "Already have an account?"
+msgstr "Zaten bir hesabınız var mı?"
+
+msgid "Log in"
+msgstr "Giriş yap"
+
+msgid "Sign up"
+msgstr "Kayıt ol"
+
+msgid "You don’t have any chat buttons yet."
+msgstr "Henüz bir sohbet tuşunuz yok."
+
+msgid "Log out of your Kommo account, then log back in to automatically generate a new chat button."
+msgstr "Kommo hesabınızdan çıkış yapın ve tekrar giriş yaparak otomatik olarak yeni bir sohbet tuşu oluşturun."
+
+msgid "Your account has chat buttons ready to use"
+msgstr "Hesabınızda kullanılmaya hazır sohbet tuşları var"
+
+msgid "Choose an existing button or design a new one to install on your website."
+msgstr "Mevcut bir tuşu seçin veya web sitenize yüklemek için yeni bir tuş tasarlayın."
+
+msgid "You’re about to log out"
+msgstr "Çıkış yapmak üzeresiniz"
+
+msgid "When you log back in, a chat button will be automatically created."
+msgstr "Tekrar giriş yaptığınızda, bir sohbet tuşu otomatik olarak oluşturulacaktır."
+
+msgid "By signing up, you agree to our"
+msgstr "Kayıt olarak, Hizmet Şartlarımızı"
+
+msgid "Terms of Service"
+msgstr "ve Gizlilik Politikamızı"
+
+msgid "and"
+msgstr "kabul etmiş"
+
+msgid "Privacy Policy"
+msgstr "oluyorsunuz"

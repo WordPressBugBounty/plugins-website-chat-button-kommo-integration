@@ -1,0 +1,367 @@
+# Copyright (C) 2024 Kommo
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Website Chat Button: Kommo integration 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/website-chat-button-kommo-integration\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Indonesian <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-01-12T09:15:27+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: website-chat-button-kommo-integration\n"
+
+#. Author URI of the plugin
+msgid "https://www.kommo.com/"
+msgstr "https://www.kommo.com/"
+
+#. Author of the plugin
+msgid "Kommo"
+msgstr "Kommo"
+
+#. Description of the plugin
+msgid "Let your customers contact you directly from your website with a chat button, conveniently manage all interactions through Kommo."
+msgstr "Biarkan pelanggan menghubungimu langsung dari website dengan tombol chat, dan kelola semua interaksi dengan mudah melalui Kommo."
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/website-chat-button-kommo-integration/"
+msgstr "https://wordpress.org/plugins/website-chat-button-kommo-integration/"
+
+#. Plugin Name of the plugin
+msgid "Website Chat Button: Kommo integration"
+msgstr "Tombol Chat Website: Integrasi Kommo"
+
+#: dashboard.php:10
+msgid "test text dashboard"
+msgstr "teks uji dasbor"
+
+#: dashboard.php:16
+msgid "Website Chat Button: Kommo integration Widget 0"
+msgstr "Tombol Chat Website: Widget Integrasi Kommo 0"
+
+msgid "The Kommo server is not responding"
+msgstr "Server Kommo tidak merespon"
+
+msgid "We’re aware of the issue and are working to fix it"
+msgstr "Kami menyadari masalah ini dan sedang berupaya memperbaikinya"
+
+msgid "Plugin error"
+msgstr "Kesalahan plugin"
+
+msgid "Are you sure you want to deactivate"
+msgstr "Apa kamu yakin ingin menonaktifkan?"
+
+msgid "PHP Error"
+msgstr "Kesalahan PHP"
+
+msgid "Plugin not ready to work. Autoload not exist"
+msgstr "Plugin belum siap digunakan. Autoload tidak ada"
+
+msgid "Plugin not ready to work. Configuration not found"
+msgstr "Plugin belum siap digunakan. Konfigurasi tidak ditemukan"
+
+msgid "Script not found. Button not allowed on public pages"
+msgstr "Skrip tidak ditemukan. Tombol tidak diizinkan di halaman publik"
+
+#: plugin_page/home_page/index.php:61
+msgid "Try again"
+msgstr "Coba lagi"
+
+msgid "Days left in your trial. "
+msgstr "Sisa hari dalam uji coba kamu."
+
+msgid "Subscribe"
+msgstr "Langganan"
+
+#: plugin_page/home_page/index.php:84
+msgid "Your website chat button is installed and active!"
+msgstr "Tombol chat di websitemu telah terpasang dan aktif!"
+
+#: plugin_page/home_page/index.php:85
+msgid "Now you can easily:"
+msgstr "Sekarang kamu bisa dengan mudah:"
+
+#: plugin_page/home_page/index.php:86
+msgid "Add your favorite channels"
+msgstr "Tambahkan saluran favoritmu"
+
+#: plugin_page/home_page/index.php:87
+msgid "Customize your chat button"
+msgstr "Sesuaikan tombol chatmu"
+
+#: plugin_page/home_page/index.php:88
+msgid "Automate sales with the bot"
+msgstr "Otomatiskan penjualan dengan bot"
+
+#: plugin_page/home_page/index.php:89
+#: plugin_page/index.php:52
+#: plugin_page/index.php:67
+msgid "Got it"
+msgstr "Mengerti"
+
+#: plugin_page/home_page/index.php:100
+msgid "Want to log out?"
+msgstr "Ingin keluar?"
+
+#: plugin_page/home_page/index.php:101
+msgid "This will remove the chat button from your website."
+msgstr "Ini akan menghapus tombol chat dari websitemu."
+
+#: plugin_page/home_page/index.php:103
+#: plugin_page/home_page/index.php:130
+#: plugin_page/home_page/index.php:141
+#: plugin_page/home_page/index.php:535
+msgid "Log out"
+msgstr "Keluar"
+
+#: plugin_page/home_page/index.php:104
+#: plugin_page/home_page/index.php:118
+msgid "Cancel"
+msgstr "Batalkan"
+
+#: plugin_page/home_page/index.php:114
+msgid "Want to turn off the"
+msgstr "Ingin menonaktifkan "
+
+#: plugin_page/home_page/index.php:114
+msgid "chat button?"
+msgstr "Tombol chat?"
+
+#: plugin_page/home_page/index.php:115
+msgid "This will remove the chat button "
+msgstr "Ini akan menghapus tombol chat dari websitemu."
+
+#: plugin_page/home_page/index.php:115
+msgid "from your website."
+msgstr "Dari wesitemu"
+
+#: plugin_page/home_page/index.php:117
+msgid "Turn Off"
+msgstr "Matikan"
+
+#: plugin_page/home_page/index.php:128
+msgid "Oops, it seems like you’ve deleted all your chat buttons"
+msgstr "Ups, sepertinya kamu telah menghapus semua tombol chat kamu"
+
+#: plugin_page/home_page/index.php:129
+#: plugin_page/home_page/index.php:140
+msgid "To create a new button, log out of your Kommo account, then log back in again."
+msgstr "Untuk membuat tombol baru, keluar dari akun Kommo kamu, lalu masuk kembali."
+
+#: plugin_page/home_page/index.php:139
+msgid "Oops, it seems like you've deleted all your chat buttons"
+msgstr "Ups, sepertinya kamu telah menghapus semua tombol chat kamu"
+
+#: plugin_page/home_page/index.php:164
+msgid "Your free trial is over"
+msgstr "Uji coba gratis kamu telah berakhir"
+
+msgid "Select plan"
+msgstr "Pilih paket"
+
+#: plugin_page/home_page/index.php:165
+msgid "You can still view and export your account data. To maintain full access, consider upgrading your account to one of our paid subscription plans."
+msgstr "Kamu masih bisa melihat dan mengekspor data akunmu. Untuk akses penuh, pertimbangkan untuk upgrade akunmu ke salah satu paket berbayar kami."
+
+#: plugin_page/home_page/index.php:174
+msgid "You have saved chat buttons available!"
+msgstr "Kamu memiliki tombol chat yang tersimpan!"
+
+#: plugin_page/home_page/index.php:175
+msgid "Choose a chat button from your Kommo account to install on your website."
+msgstr "Pilih tombol chat dari akun Kommo kamu untuk dipasang di website."
+
+#: plugin_page/home_page/index.php:177
+msgid "Select button"
+msgstr "Pilih tombol"
+
+#: plugin_page/home_page/index.php:177
+msgid "WordPress button"
+msgstr "Tombol WordPress"
+
+#: plugin_page/home_page/index.php:200
+msgid "Next"
+msgstr "Berikutnya"
+
+#: plugin_page/home_page/index.php:201
+msgid "Create new chat button"
+msgstr "Buat tombol chat baru"
+
+#: plugin_page/home_page/index.php:230
+msgid "Your Client ID:"
+msgstr "ID Klien kamu:"
+
+#: plugin_page/home_page/index.php:237
+#: plugin_page/index.php:105
+msgid "Unified inbox"
+msgstr "Kotak masuk terpadu"
+
+#: plugin_page/home_page/index.php:238
+msgid "No more app switching, no more lost conversations — centralize all your business communications in a single tab."
+msgstr "Tidak perlu lagi berpindah aplikasi atau kehilangan percakapan — pusatkan semua komunikasi bisnis kamu dalam satu tab."
+
+#: plugin_page/home_page/index.php:255
+msgid "Try your"
+msgstr "Coba"
+
+#: plugin_page/home_page/index.php:255
+msgid "website chat button"
+msgstr "tombol chat website "
+
+#: plugin_page/home_page/index.php:255
+msgid "to see how leads flow directly to your inbox."
+msgstr "untuk melihat bagaimana lead mengalir langsung ke kotak masukmu."
+
+#: plugin_page/home_page/index.php:257
+msgid "Go to inbox"
+msgstr "Buka kotak masuk"
+
+#: plugin_page/home_page/index.php:273
+msgid "Сustomize your website chat button"
+msgstr "Kustomisasi tombol chat di websitemu"
+
+#: plugin_page/home_page/index.php:274
+msgid "Add your favorite channels, designing each button with a style authentic to your brand's unique identity."
+msgstr "Tambahkan saluran favorit kamu dan desain setiap tombol sesuai dengan identitas unik merek kamu."
+
+#: plugin_page/home_page/index.php:275
+msgid "Start customizing"
+msgstr "Mulai kustomisasi"
+
+#: plugin_page/home_page/index.php:287
+msgid "Create templates & build code-free chatbots"
+msgstr "Buat template & bangun chatbot tanpa kode"
+
+#: plugin_page/home_page/index.php:288
+msgid "Send personalized templates with a single click or use bots for efficient workflows (no coding skills required!)"
+msgstr "Kirim template personalisasi dengan satu klik atau gunakan bot untuk alur kerja yang lebih efisien (tanpa perlu skill coding!)"
+
+#: plugin_page/home_page/index.php:289
+msgid "Build your first bot"
+msgstr "Bangun bot pertama kamu"
+
+#: plugin_page/home_page/index.php:309
+msgid "Help Center"
+msgstr "Pusat Info"
+
+#: plugin_page/home_page/index.php:325
+msgid "Chat with support"
+msgstr "Tanya tim dukungan"
+
+#: plugin_page/home_page/index.php:343
+msgid "Book a free 1:1 demo"
+msgstr "Jadwalkan demo 1:1 gratis"
+
+#: plugin_page/home_page/index.php:358
+msgid "Hire an expert partner"
+msgstr "Sewa partner eksper"
+
+#: plugin_page/home_page/index.php:528
+msgid "Turn Off Chat Button"
+msgstr "Matikan Tombol Chat"
+
+#: plugin_page/home_page/index.php:529
+msgid "Turn On Chat Button"
+msgstr "Nyalakan Tombol Chat"
+
+#: plugin_page/home_page/index.php:627
+msgid "Logout failed. Try again"
+msgstr "Gagal keluar. Coba lagi"
+
+#: plugin_page/home_page/index.php:628
+msgid "Logout failed. Server Error. Connect with support Team"
+msgstr "Gagal keluar. Kesalahan server. Hubungi tim dukungan"
+
+#: plugin_page/home_page/index.php:629
+msgid "Wordpress logout Error. Try again"
+msgstr "Kesalahan logout WordPress. Coba lagi"
+
+#: plugin_page/home_page/index.php:890
+msgid "You have "
+msgstr "Kamu punya"
+
+#: plugin_page/home_page/index.php:890
+msgid " unread message"
+msgstr "pesan yang belum dibaca"
+
+#: plugin_page/home_page/index.php:897
+msgid "You have no unread messages"
+msgstr "Kamu tidak memiliki pesan yang belum dibaca"
+
+#: plugin_page/index.php:44
+msgid "Oops, something went %s wrong with your sign up..."
+msgstr "Oops, ada yang salah %s dengan pendaftaran kamu..."
+
+#: plugin_page/index.php:46
+#: plugin_page/index.php:61
+msgid "Try again or contact "
+msgstr "Coba lagi atau hubungi"
+
+#: plugin_page/index.php:48
+#: plugin_page/index.php:63
+msgid "our support team"
+msgstr "tim dukungan kami "
+
+#: plugin_page/index.php:50
+#: plugin_page/index.php:65
+msgid " for assistance."
+msgstr "untuk bantuan."
+
+#: plugin_page/index.php:59
+msgid "Oops, something went wrong with your log in..."
+msgstr "Ups, ada yang salah dengan login kamu..."
+
+#: plugin_page/index.php:74
+msgid "Easily customize the button to reflect your brand’s identity."
+msgstr "Mudah menyesuaikan tombol agar mencerminkan identitas brandmu."
+
+#: plugin_page/index.php:84
+msgid "Never lose a conversation - one inbox, full visibility on every client."
+msgstr "Jangan pernah kehilangan percakapan - satu kotak masuk, visibilitas penuh pada setiap klien."
+
+#: plugin_page/index.php:106
+msgid "Centralize all your business %s communications in a single tab."
+msgstr "Pusatkan semua komunikasi bisnis kamu dalam satu tab."
+
+#: plugin_page/index.php:194
+msgid "Already have an account?"
+msgstr "Sudah punya akun?"
+
+msgid "Log in"
+msgstr "Masuk"
+
+msgid "Sign up"
+msgstr "Daftar"
+
+msgid "You don’t have any chat buttons yet."
+msgstr "Kamu belum memiliki tombol chat."
+
+msgid "Log out of your Kommo account, then log back in to automatically generate a new chat button."
+msgstr "Keluar dari akun Kommo kamu, lalu masuk kembali untuk secara otomatis membuat tombol chat baru."
+
+msgid "Your account has chat buttons ready to use"
+msgstr "Akun kamu memiliki tombol chat yang siap digunakan"
+
+msgid "Choose an existing button or design a new one to install on your website."
+msgstr "Pilih tombol yang sudah ada atau buat tombol baru untuk dipasang di websitemu."
+
+msgid "You’re about to log out"
+msgstr "Kamu akan keluar"
+
+msgid "When you log back in, a chat button will be automatically created."
+msgstr "Saat kamu masuk kembali, tombol chat akan dibuat secara otomatis."
+
+msgid "By signing up, you agree to our"
+msgstr "Dengan mendaftar, kamu menyetujui"
+
+msgid "Terms of Service"
+msgstr "Ketentuan Layanan"
+
+msgid "and"
+msgstr "dan"
+
+msgid "Privacy Policy"
+msgstr "Kebijakan Privasi"

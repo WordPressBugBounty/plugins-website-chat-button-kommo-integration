@@ -1,0 +1,331 @@
+# Copyright (C) 2024 Kommo
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Website Chat Button: Kommo integration 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/website-chat-button-kommo-integration\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-01-12T09:15:27+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: website-chat-button-kommo-integration\n"
+
+#. Plugin Name of the plugin
+msgid "Website Chat Button: Kommo integration"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://www.kommo.com/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Website Chat Button: Kommo integration"
+msgstr ""
+
+#. Author of the plugin
+msgid "Kommo"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.kommo.com/"
+msgstr ""
+
+#: dashboard.php:10
+msgid "test text dashboard"
+msgstr ""
+
+#: dashboard.php:16
+msgid "Website Chat Button: Kommo integration Widget 0"
+msgstr ""
+
+msgid "Kommo server is not responding"
+msgstr ""
+
+msgid "We already know about the problem and are solving it"
+msgstr ""
+
+msgid "Plugin error"
+msgstr ""
+
+msgid "Are you sure you want to deactivate"
+msgstr ""
+
+msgid "PHP Error"
+msgstr ""
+
+msgid "Plugin not ready to work. Autoload not exist"
+msgstr ""
+
+msgid "Plugin not ready to work. Configuration not found"
+msgstr ""
+
+msgid "Script not found. Button not allowed on public pages"
+msgstr ""
+
+#: plugin_page/home_page/index.php:61
+msgid "Try again"
+msgstr ""
+
+msgid "Days left in your trial. "
+msgstr ""
+
+msgid "Subscribe"
+msgstr ""
+
+#: plugin_page/home_page/index.php:84
+msgid "Your website chat button is installed and active!"
+msgstr ""
+
+#: plugin_page/home_page/index.php:85
+msgid "Now you can easily:"
+msgstr ""
+
+#: plugin_page/home_page/index.php:86
+msgid "Add your favorite channels"
+msgstr ""
+
+#: plugin_page/home_page/index.php:87
+msgid "Customize your chat button"
+msgstr ""
+
+#: plugin_page/home_page/index.php:88
+msgid "Automate sales with the bot"
+msgstr ""
+
+#: plugin_page/home_page/index.php:89
+#: plugin_page/index.php:52
+#: plugin_page/index.php:67
+msgid "Got it"
+msgstr ""
+
+#: plugin_page/home_page/index.php:100
+msgid "Want to log out?"
+msgstr ""
+
+#: plugin_page/home_page/index.php:101
+msgid "This will remove the chat button from your website."
+msgstr ""
+
+#: plugin_page/home_page/index.php:103
+#: plugin_page/home_page/index.php:130
+#: plugin_page/home_page/index.php:141
+#: plugin_page/home_page/index.php:535
+msgid "Log out"
+msgstr ""
+
+#: plugin_page/home_page/index.php:104
+#: plugin_page/home_page/index.php:118
+msgid "Cancel"
+msgstr ""
+
+#: plugin_page/home_page/index.php:114
+msgid "Want to turn off the"
+msgstr ""
+
+#: plugin_page/home_page/index.php:114
+msgid "chat button?"
+msgstr ""
+
+#: plugin_page/home_page/index.php:115
+msgid "This will remove the chat button "
+msgstr ""
+
+#: plugin_page/home_page/index.php:115
+msgid "from your website."
+msgstr ""
+
+#: plugin_page/home_page/index.php:117
+msgid "Turn Off"
+msgstr ""
+
+#: plugin_page/home_page/index.php:128
+msgid "Oops, it seems like you’ve deleted all your chat buttons"
+msgstr ""
+
+#: plugin_page/home_page/index.php:129
+#: plugin_page/home_page/index.php:140
+msgid "To create a new button, log out of your Kommo account, then log back in again."
+msgstr ""
+
+#: plugin_page/home_page/index.php:139
+msgid "Oops, it seems like you've deleted all your chat buttons"
+msgstr ""
+
+#: plugin_page/home_page/index.php:164
+msgid "Your free trial is over"
+msgstr ""
+
+msgid "Select plan"
+msgstr ""
+
+#: plugin_page/home_page/index.php:165
+msgid "You can still view and export your account data. To maintain full access, consider upgrading your account to one of our paid subscription plans."
+msgstr ""
+
+#: plugin_page/home_page/index.php:174
+msgid "You have saved chat buttons available!"
+msgstr ""
+
+#: plugin_page/home_page/index.php:175
+msgid "Choose a chat button from your Kommo account to install on your website."
+msgstr ""
+
+#: plugin_page/home_page/index.php:177
+msgid "Select button"
+msgstr ""
+
+#: plugin_page/home_page/index.php:177
+msgid "WordPress button"
+msgstr ""
+
+#: plugin_page/home_page/index.php:200
+msgid "Next"
+msgstr ""
+
+#: plugin_page/home_page/index.php:201
+msgid "Create new chat button"
+msgstr ""
+
+#: plugin_page/home_page/index.php:230
+msgid "Your Client ID:"
+msgstr ""
+
+#: plugin_page/home_page/index.php:237
+#: plugin_page/index.php:105
+msgid "Unified inbox"
+msgstr ""
+
+#: plugin_page/home_page/index.php:238
+msgid "No more app switching, no more lost conversations — centralize all your business communications in a single tab."
+msgstr ""
+
+#: plugin_page/home_page/index.php:255
+msgid "Try your"
+msgstr ""
+
+#: plugin_page/home_page/index.php:255
+msgid "website chat button"
+msgstr ""
+
+#: plugin_page/home_page/index.php:255
+msgid "to see how leads flow directly to your inbox."
+msgstr ""
+
+#: plugin_page/home_page/index.php:257
+msgid "Go to inbox"
+msgstr ""
+
+#: plugin_page/home_page/index.php:273
+msgid "Сustomize your website chat button"
+msgstr ""
+
+#: plugin_page/home_page/index.php:274
+msgid "Add your favorite channels, designing each button with a style authentic to your brand's unique identity."
+msgstr ""
+
+#: plugin_page/home_page/index.php:275
+msgid "Start customizing"
+msgstr ""
+
+#: plugin_page/home_page/index.php:287
+msgid "Create templates & build code-free chatbots"
+msgstr ""
+
+#: plugin_page/home_page/index.php:288
+msgid "Send personalized templates with a single click or use bots for efficient workflows (no coding skills required!)"
+msgstr ""
+
+#: plugin_page/home_page/index.php:289
+msgid "Build your first bot"
+msgstr ""
+
+#: plugin_page/home_page/index.php:309
+msgid "Help Center"
+msgstr ""
+
+#: plugin_page/home_page/index.php:325
+msgid "Chat with support"
+msgstr ""
+
+#: plugin_page/home_page/index.php:343
+msgid "Book a free 1:1 demo"
+msgstr ""
+
+#: plugin_page/home_page/index.php:358
+msgid "Hire an expert partner"
+msgstr ""
+
+#: plugin_page/home_page/index.php:528
+msgid "Turn Off Chat Button"
+msgstr ""
+
+#: plugin_page/home_page/index.php:529
+msgid "Turn On Chat Button"
+msgstr ""
+
+#: plugin_page/home_page/index.php:627
+msgid "Logout failed. Try again"
+msgstr ""
+
+#: plugin_page/home_page/index.php:628
+msgid "Logout failed. Server Error. Connect with support Team"
+msgstr ""
+
+#: plugin_page/home_page/index.php:629
+msgid "Wordpress logout Error. Try again"
+msgstr ""
+
+#: plugin_page/home_page/index.php:890
+msgid "You have "
+msgstr ""
+
+#: plugin_page/home_page/index.php:890
+msgid " unread message"
+msgstr ""
+
+#: plugin_page/home_page/index.php:897
+msgid "You have no unread messages"
+msgstr ""
+
+#: plugin_page/index.php:44
+msgid "Oops, something went wrong with your sign up..."
+msgstr ""
+
+#: plugin_page/index.php:46
+#: plugin_page/index.php:61
+msgid "Try again or contact "
+msgstr ""
+
+#: plugin_page/index.php:48
+#: plugin_page/index.php:63
+msgid "our support team"
+msgstr ""
+
+#: plugin_page/index.php:50
+#: plugin_page/index.php:65
+msgid " for assistance."
+msgstr ""
+
+#: plugin_page/index.php:59
+msgid "Oops, something went wrong with your log in..."
+msgstr ""
+
+#: plugin_page/index.php:74
+msgid "Easily customize the button to reflect your brand’s identity."
+msgstr ""
+
+#: plugin_page/index.php:84
+msgid "Never lose a conversation - one inbox, full visibility on every client."
+msgstr ""
+
+#: plugin_page/index.php:106
+msgid "Centralize all your business <br>communications in a single tab."
+msgstr ""
+
+#: plugin_page/index.php:194
+msgid "Already have an account?"
+msgstr ""

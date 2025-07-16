@@ -1,0 +1,492 @@
+@font-face {
+    font-family: "Euclid Circular A";
+    src: url("/wp-content/plugins/website-chat-button-kommo-integration/main/plugin_page/fonts/Euclid-Circular-A-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Euclid Circular A";
+    src: url("/wp-content/plugins/website-chat-button-kommo-integration/main/plugin_page/fonts/Euclid-Circular-A-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Euclid Circular A";
+    src: url("/wp-content/plugins/website-chat-button-kommo-integration/main/plugin_page/fonts/Euclid-Circular-A-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Euclid Circular A";
+    src: url("/wp-content/plugins/website-chat-button-kommo-integration/main/plugin_page/fonts/Euclid-Circular-A-SemiBold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Euclid Circular A";
+    src: url("/wp-content/plugins/website-chat-button-kommo-integration/main/plugin_page/fonts/Euclid-Circular-A-Bold.ttf");
+    font-weight: 700;
+}
+body{
+    margin: 0;
+}
+.square {
+    width: 100px;
+    animation: 1s linear infinite rotate;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.overlay *{
+    margin: 0;
+    padding: 0;
+    font-family:'Euclid Circular A';
+}
+.content *{
+    margin: 0;
+    padding: 0;
+    font-family:'Euclid Circular A';
+}
+#wpwrap {
+    background: #FFFFFF;
+    padding-bottom: unset;
+}
+#wpcontent {
+    padding-left: unset;
+}
+#wpbody-content{
+    padding-bottom: unset;
+}
+#wpfooter{
+    display: none;
+}
+.notice.update-nag{
+    display: none;
+}
+.content{
+    display: flex;
+}
+.content-block{
+    width: 50vw;
+    height: calc(100vh - 32px);
+}
+.info-block{
+    background: #F3EFFF;
+}
+#close-overlay{
+    cursor: pointer;
+}
+.element-cursor-pointer:hover{
+    cursor: pointer;
+}
+/*-----------*/
+.error-window{
+    text-align: center;
+}
+.error-window .img{
+    margin: 92px 0 0 0;
+}
+.error-window h1{
+    color: #0E0142;
+    margin: 40px 0 0 0;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+.error-window h3{
+    color: #0E0142;
+    margin: 8px 0 0 0;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.error-window button{
+    border: none;
+    margin: 40px 0 0 0;
+    height: 50px;
+    padding: 18px 40px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #0E0142;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%;
+}
+/* ---------- */
+.overlay{display: none;}
+.overlay.active{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:  rgba(14, 1, 66, 0.60);
+    width: 100%;
+    z-index: 100;
+    height: 100vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.preloader-redirect{
+    display: none;
+}
+.preloader-redirect.active{
+    display: block;
+}
+.error-registration{
+    display: none;
+}
+.error-registration.active{
+    display: block;
+    position: relative;
+    border-radius: 20px;
+    background:  #F3EFFF;
+    width: calc(400px - 40px - 40px);
+    height: calc(316px - 60px - 60px);
+    padding: 60px 40px;
+    text-align: center;
+}
+.error-registration.active svg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 24px;
+}
+.error-registration.active h3{
+    color: #0E0142;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0 0 8px;
+}
+.error-registration.active h5{
+    color: #0E0142;
+    margin: 0 0 28px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+.error-registration.active h5 a{
+    color: #5F43D0;
+}
+.error-registration.active button{
+    font-size: 16px;
+    color: #0E0142;
+    display: flex;
+    height: 50px;
+    padding: 18px 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 2px solid #0E0142;
+    background: none;
+    margin: 0 auto;
+    font-weight: 500;
+}
+/* ---------- */
+.error-login{
+    display: none;
+}
+.error-login.active{
+    display: block;
+    position: relative;
+    border-radius: 20px;
+    background:  #F3EFFF;
+    width: calc(400px - 40px - 40px);
+    height: calc(316px - 60px - 60px);
+    padding: 60px 40px;
+    text-align: center;
+}
+.error-login.active svg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 24px;
+}
+.error-login.active h3{
+    color: #0E0142;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0 0 8px;
+}
+.error-login.active h5{
+    color: #0E0142;
+    margin: 0 0 28px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+.error-login.active h5 a{
+    color: #5F43D0;
+}
+.error-login.active button{
+    font-size: 16px;
+    color: #0E0142;
+    display: flex;
+    height: 50px;
+    padding: 18px 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 2px solid #0E0142;
+    background: none;
+    margin: 0 auto;
+    font-weight: 500;
+}
+/* ---------- */
+.trial-is-over{
+    display: none;
+}
+.trial-is-over.active{
+    display: block;
+    position: relative;
+    border-radius: 20px;
+    background:  #F3EFFF;
+    width: calc(400px - 40px - 40px);
+    /*height: calc(316px - 60px - 60px);*/
+    padding: 60px 40px;
+    text-align: center;
+}
+.trial-is-over.active svg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 24px;
+}
+.trial-is-over.active h3{
+    color: #0E0142;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0 0 8px;
+}
+.trial-is-over.active h5{
+    color: #0E0142;
+    margin: 0 0 28px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+.trial-is-over.active h5 a{
+    color: #5F43D0;
+}
+.trial-is-over.active button{
+    font-size: 16px;
+    color: #0E0142;
+    display: flex;
+    height: 50px;
+    padding: 18px 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 2px solid #0E0142;
+    background: none;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+
+/* Left Panel */
+/* ---------- */
+/* Left Panel 1 */
+
+.info-block-preview-1 .text-element p{
+    color: #FFFFFF;
+    background: #4B34A8;
+}
+.info-block-preview-1 .text-element span{
+    background: #4B34A8;
+    margin-left: 15%;
+}
+.info-block-preview-1{
+    position: relative;
+    height: 50%;
+}
+.info-block-preview-1 img{
+    position: absolute;
+}
+.info-block-preview-1 .text-element{
+    position: absolute;
+    bottom: 301px;
+    left: calc(10vw + 95px);
+}
+.img-setting-block{
+    position: absolute;
+    bottom: 0px;
+    left: calc(10vw - 149px);
+    width: 36vw;
+    max-width: 402px;
+}
+.img-chat{
+    position: absolute;
+    bottom: 41px;
+    left: calc(10vw + 68px);
+    width: 17.33vw;
+    max-width: 208px;
+}
+.img-face-star{
+    position: absolute;
+    bottom: 214px;
+    left: calc(10vw - 100px);
+    width: 12vw;
+    max-width: 132px;
+}
+
+/* ---------- */
+.img-face-arrow{
+    position: relative;
+    width: 18vw;
+    margin-top: -12vw;
+    right: 24.5vw;
+    max-width: 162px;
+}
+.text-element p{
+    margin: 0;
+    display: flex;
+    width: 25vw;
+    max-width: 320px;
+    padding: 12px 16px 16px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+.text-element span{
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    rotate: 45deg;
+    bottom: 12.5px;
+}
+/* Left Panel 2 */
+.info-block-preview-2{
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.info-block-preview-2 .text-element p{
+    color: #0E0142;
+    background: #FFE247;
+}
+.info-block-preview-2 .text-element span{
+    background: #FFE247;
+    margin-left: 65%;
+}
+
+.info-block-preview-2 .text-element{
+    position: absolute;
+    top: 50px;
+    left: calc(10vw + -88px);
+}
+.img-face-Email{
+    position: absolute;
+    top: 179px;
+    left: calc(10vw - 85px);
+    width: 17vw;
+    max-width: 127px;
+}
+.img-face-Email-mobile {
+    display: none;
+}
+.img-Yellow-Frame{
+    position: absolute;
+    top: 155px;
+    left: calc(10vw + 76px);
+    width: 41vw;
+    max-width: 437px;
+}
+
+/* Right Panel */
+/* ---------- */
+/* Form Panel*/
+.auth-block{
+    background: #FFFFFF;
+    z-index: 5;
+    text-align: center;
+    color: #0E0142;
+}
+.auth-form{
+    margin-top: 20vh;
+    padding: 7vw;
+}
+.auth-block .logo{
+    margin-bottom: 32px;
+}
+.auth-block h2{
+    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #0E0142;
+}
+.auth-block h4{
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+}
+.auth-block .sign-up{
+    cursor: pointer;
+    display: block;
+    width: 70%;
+    background: #0E0142;
+    border: none;
+    border-radius: 100px;
+    color: #FFFFFF;
+    padding: 18px 40px;
+    max-width: calc(391px - 80px);
+    text-decoration: none;
+    margin: 0 auto 26px;
+}
+.kommo-login-link .kommo-sign-script-text{
+    cursor: pointer;
+    color: #5F43D0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+}
+/* .auth-form h2,
+.auth-form h4,
+.auth-form div{
+    color: #0E0142;
+} */
+.auth-form-log-in{
+    color: #0E0142;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+.auth-form-log-in .kommo-login-link{
+    display: inline-block;
+}
+.terms-of-condition-kommo{
+    color: rgb(134, 128, 160);
+    font-size: .75rem;
+    margin-top: 16px;
+}
+.terms-of-condition-kommo a{
+    color: #5F43D0;
+}

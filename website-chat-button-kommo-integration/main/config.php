@@ -1,0 +1,91 @@
+<?php
+
+if (!defined('ABSPATH')) {
+	exit();
+};
+
+const KOMMOFLASH_STATE_SEPARATOR = '_';
+
+const KOMMOFLASH_DB_TABLE = 'kommoflash';
+
+const KOMMOFLASH_KOMMO_URL = 'https://www.kommo.com';
+
+const KOMMOFLASH_PLUGIN_PAGE_ID = 'website-chat-button-kommo-integration';
+const KOMMOFLASH_PLUGIN_MENU_POSITION = 99;
+const KOMMOFLASH_PLUGIN_PATH = __DIR__;
+const KOMMOFLASH_PLUGIN_PATH_RELATIVE = '/wp-content/plugins/' . KOMMOFLASH_PLUGIN_PAGE_ID;
+const KOMMOFLASH_PLUGIN_PAGE_URL = '/wp-admin/admin.php?page=' . KOMMOFLASH_PLUGIN_PAGE_ID;
+
+const KOMMOFLASH_PLUGIN_PAGE_ACTIVATION_ID = KOMMOFLASH_PLUGIN_PAGE_ID . '/' . KOMMOFLASH_PLUGIN_PAGE_ID . '.php';
+
+if (!defined('KOMMOFLASH_INTEGRATION_AUTH_URL')) {
+    define('KOMMOFLASH_INTEGRATION_AUTH_URL', site_url());
+}
+
+const KOMMOFLASH_INTEGRATION_AUTH_SECRETS_GET_COUNT = 4;
+const KOMMOFLASH_INTEGRATION_BUTTON_GET_COUNT_ATTEMPTS = 2;
+const KOMMOFLASH_INTEGRATION_AUTH_LOGO_URI = KOMMOFLASH_INTEGRATION_AUTH_URL . KOMMOFLASH_PLUGIN_PATH_RELATIVE . '/main/auth/asset/logo.png';
+
+const KOMMOFLASH_API_ACCOUNT_URI_PATHNAME = 'api/v4/account';
+const KOMMOFLASH_API_PIPELINE_URI_PATHNAME = 'api/v4/leads/pipelines';
+const KOMMOFLASH_API_GET_COUNT_INBOX_PATHNAME = 'api/v4/inbox/badge';
+
+// trial
+const KOMMOFLASH_TRIAL_END = 0;
+const KOMMOFLASH_TRIAL_SHOW_MODAL_FRAME = 200;
+const KOMMOFLASH_TRIAL_COUNT_DAYS = 14;
+const KOMMOFLASH_TRIAL_COUNT_DAYS_EDIT_BG = 3;
+
+// inbox
+const KOMMOFLASH_INBOX_LIMIT_MESSAGE = 99;
+
+//chat button switch
+const KOMMOFLASH_CHAT_BUTTON_SWITCH_FALSE = 0;
+const KOMMOFLASH_CHAT_BUTTON_SWITCH_TRUE = 1;
+
+//chat button ib db
+const KOMMOFLASH_CHAT_BUTTON_NEED_BUTTON = 0;
+const KOMMOFLASH_CHAT_BUTTON_IN_DB = 1;
+const KOMMOFLASH_CHAT_BUTTON_NOT_EXIST = 2;
+
+// api uri list
+const KOMMOFLASH_BUTTON_NAME_DEFAULT = 'Website chat button';
+const KOMMOFLASH_BUTTON_ADD_CHAT_ATTEMPTS = 1;
+const KOMMOFLASH_BUTTON_ADD_CHAT_ATTEMPTS_INTERVAL = 1;
+
+const KOMMOFLASH_PATH_PAGE_AUTH = '/plugin_page/index.php';
+const KOMMOFLASH_PATH_PAGE_HOME = '/plugin_page/home_page/index.php';
+
+const KOMMOFLASH_INTEGRATION_SITE_PLUGIN_PATH_ADMIN_WP = 'admin.php?page=' . KOMMOFLASH_PLUGIN_PAGE_ID;
+
+const KOMMOFLASH_TEXT_SUPPORT_NAME = 'support Kommo';
+const KOMMOFLASH_TEXT_PLUGIN_TITLE_ADMIN = 'Kommo: Website Chat Button integration';
+const KOMMOFLASH_TEXT_PLUGIN_MENU_ADMIN = 'Kommo';
+
+const KOMMOFLASH_PLUGIN_VERSION = '1.3.0';
+
+const KOMMOFLASH_LOCALE_LIST_PT = [
+    'pt_AO',
+    'pt_BR',
+    'pt_PT_ao90',
+];
+const KOMMOFLASH_LOCALE_LIST_ES = [
+    'es_EC',
+    'es_VE',
+    'es_AR',
+    'es_MX',
+    'es_CR',
+    'es_DO',
+    'es_PE',
+    'es_UY',
+    'es_CL',
+    'es_PR',
+    'es_GT',
+    'es_CO',
+];
+
+const KOMMOFLASH_LOCALE_TEXT_DOMAIN = KOMMOFLASH_PLUGIN_PAGE_ID;
+
+$_SESSION['kommoflash_url_sign'] = [
+    'logo' => KOMMOFLASH_INTEGRATION_AUTH_LOGO_URI,
+];
