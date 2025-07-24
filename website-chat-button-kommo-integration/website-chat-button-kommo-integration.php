@@ -4,7 +4,7 @@
  * Plugin Name: Website Chat Button: Kommo integration
  * Plugin URI: https://wordpress.org/plugins/website-chat-button-kommo-integration/
  * Description: Let your customers contact you directly from your website with a chat button, conveniently manage all interactions through Kommo.
- * Version: 1.3.0
+ * Version: 1.3.1
  * Requires at least: 6.4
  * Requires PHP: 7.4
  * Author: Kommo

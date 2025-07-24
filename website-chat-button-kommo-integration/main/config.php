@@ -62,7 +62,7 @@ const KOMMOFLASH_TEXT_SUPPORT_NAME = 'support Kommo';
 const KOMMOFLASH_TEXT_PLUGIN_TITLE_ADMIN = 'Kommo: Website Chat Button integration';
 const KOMMOFLASH_TEXT_PLUGIN_MENU_ADMIN = 'Kommo';
 
-const KOMMOFLASH_PLUGIN_VERSION = '1.3.0';
+const KOMMOFLASH_PLUGIN_VERSION = '1.3.1';
 
 const KOMMOFLASH_LOCALE_LIST_PT = [
     'pt_AO',

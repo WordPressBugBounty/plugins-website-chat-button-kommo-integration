@@ -118,11 +118,11 @@ $kommo_link_support = KommoFlashFunctions::getAccountLinksSupport();
             <rect x="2.80859" y="19.9999" width="24" height="2" rx="1" transform="rotate(-45 2.80859 19.9999)" fill="#0E0142"/>
             <rect x="4.22266" y="3.00012" width="24" height="2" rx="1" transform="rotate(45 4.22266 3.00012)" fill="#0E0142"/>
         </svg>
-        <h3><?php esc_html_e("We couldn’t log you in", 'website-chat-button-kommo-integration')?></h3>
+        <h3><?php esc_html_e('Unable to log you in', 'website-chat-button-kommo-integration')?></h3>
         <h5>
-            <?php esc_html_e("This account has no active subscription or trial. Try a different account with a valid subscription, or ", 'website-chat-button-kommo-integration')?>
+            <?php esc_html_e('This account doesn’t have an active subscription or trial. Use another account, or ', 'website-chat-button-kommo-integration')?>
             <a target="_blank" href='<?php echo esc_html(sanitize_url($_SESSION['kommoflash']['account_links']['account']['subscribe'] ?? ''))?>'>
-                <?php esc_html_e("upgrade your current account.", 'website-chat-button-kommo-integration')?>
+                <?php esc_html_e('upgrade this one to continue.', 'website-chat-button-kommo-integration')?>
             </a>
         </h5>
         <button id="close-overlay"><?php esc_html_e("Got it", 'website-chat-button-kommo-integration')?></button>

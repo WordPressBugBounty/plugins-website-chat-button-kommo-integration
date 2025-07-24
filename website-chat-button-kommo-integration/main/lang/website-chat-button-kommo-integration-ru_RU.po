@@ -1,8 +1,8 @@
-# Copyright (C) 2024 Kommo
+# Copyright (C) 2025 Kommo
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Website Chat Button: Kommo integration 1.1.0\n"
+"Project-Id-Version: Website Chat Button: Kommo integration 1.3.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/website-chat-button-kommo-integration\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -370,3 +370,12 @@ msgstr "и"
 
 msgid "Privacy Policy"
 msgstr "Политикой конфиденциальности"
+
+msgid "Unable to log you in"
+msgstr "Не удалось войти в аккаунт"
+
+msgid "This account doesn’t have an active subscription or trial. Use another account, or "
+msgstr "У этого аккаунта нет активной подписки или пробного периода. Используйте другой аккаунт или "
+
+msgid "upgrade this one to continue."
+msgstr "перейдите на платный тариф, чтобы продолжить."
