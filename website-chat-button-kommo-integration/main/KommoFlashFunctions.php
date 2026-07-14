@@ -11,6 +11,7 @@ use League\OAuth2\Client\Grant\AuthorizationCode;
 use League\OAuth2\Client\Token\AccessToken;
 use GuzzleHttp\Exception\GuzzleException;
 use League\OAuth2\Client\Token\AccessTokenInterface;
+use WebsiteChatButtonKommoIntegration\Enum\KommoWCBButtonCreationStatusEnum;
 use WebsiteChatButtonKommoIntegration\Enum\KommoWCBOptionsEnum;
 use WebsiteChatButtonKommoIntegration\PluginRESTController;
 use WebsiteChatButtonKommoIntegration\Repository\KommoWCBOptionRepository;
@@ -23,6 +24,10 @@ class KommoFlashFunctions
 {
     private const SAFE_ENT_COMPAT = 3;
     private const SAFE_ENT_SUBSTITUTE = 8;
+
+    // retry for button script: create is async (202), the button is built by a worker
+    private const BUTTON_SCRIPT_GET_ATTEMPTS = 5;
+    private const BUTTON_SCRIPT_GET_ATTEMPTS_INTERVAL = 1;
 
     public static array $ERROR_PLUGIN_DEFAULT = ['title' => '', 'text' => ''];
     public static array $ERROR_KOMMOFLASH_DEFAULT = ['title' => '', 'text' => ''];
@@ -562,13 +567,33 @@ class KommoFlashFunctions
             return $result;
         }
 
-        try {
-            $result['data'] = $this->apiClient->websiteButtons()->getOne($sourceId, WebsiteButtonModel::getAvailableWith())->toArray();
-        } catch (AmoCRMApiException $e) {
-            $result['error'] = $e->getMessage();
+        for ($i = 1; $i <= self::BUTTON_SCRIPT_GET_ATTEMPTS; $i++) {
+            try {
+                $result['data'] = $this->apiClient->websiteButtons()->getOne(
+                    $sourceId,
+                    WebsiteButtonModel::getAvailableWith()
+                )->toArray();
+            } catch (AmoCRMApiException $e) {
+                $result['error'] = $e->getMessage();
+                break;
+            }
+
+            if (!empty($result['data']['script'])) {
+                break;
+            }
+
+            if ($i < self::BUTTON_SCRIPT_GET_ATTEMPTS) {
+                sleep(self::BUTTON_SCRIPT_GET_ATTEMPTS_INTERVAL);
+            }
         }
 
         if (!empty($result['error'])) {
+            return $result;
+        }
+
+        if (empty($result['data']['script'])) {
+            $result['error'] = 'Script not found. Button not allowed on public pages';
+
             return $result;
         }
 
@@ -577,11 +602,6 @@ class KommoFlashFunctions
             'button_id' => $result['data']['button_id'],
         ]]);
         $result['data']['button_settings_link'] = $links['account']['button_settings'];
-
-        if (empty($result['data']['script'])) {
-            $result['error'] = 'Script not found. Button not allowed on public pages';
-            return $result;
-        }
 
         KommoWCBOptionRepository::update(
             KommoWCBOptionsEnum::CHAT_BUTTON_SCRIPT,
@@ -985,6 +1005,10 @@ class KommoFlashFunctions
 
     public static function getChatButtonsData($data)
     {
+        $data = array_values(array_filter($data, static function ($item) {
+            return ($item['creation_status'] ?? '') === KommoWCBButtonCreationStatusEnum::CREATED;
+        }));
+
         $result = [];
         $number = 0;
         $count = count($data);
