@@ -1,7 +1,7 @@
 === Website Chat Button: Kommo integration ===
 Contributors: Kommo
 Tags: website chat, website chat button, chat plugin, chat button plugin,
-Stable tag: 1.3.2
+Stable tag: 1.3.3
 Requires PHP: 7.4
 Tested up to: 6.8
 Requires at least: 6.4
@@ -81,6 +81,9 @@ No. You can receive, read, and reply to an unlimited number of messages through 
 
 == Upgrade Notice ==
 
+= 1.3.3 =
+* Fixed an issue where the Log in and Sign up buttons sometimes didn’t appear on the plugin page.
+
 = 1.3.2 =
 * Fixed an issue where the website chat button failed to connect after being set up.
 
@@ -103,6 +106,9 @@ No. You can receive, read, and reply to an unlimited number of messages through 
 Initial release
 
 == Changelog ==
+
+= 1.3.3 =
+* Fixed an issue where the Log in and Sign up buttons sometimes didn’t appear on the plugin page.
 
 = 1.3.2 =
 * Fixed an issue where the website chat button failed to connect after being set up.

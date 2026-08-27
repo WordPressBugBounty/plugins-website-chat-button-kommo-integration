@@ -1,11 +1,16 @@
 let kommoErrorAuthFrontendExist = false;
-window.onload = function () {
+
+window.addEventListener('message', kommo_receiveOAuthMessage, false);
+window.addEventListener('message', kommo_receiveNewLocation, false);
+
+function kommo_initOAuthButtons() {
     var oauth_scripts = document.querySelectorAll('[data-js-selector="kommo_oauth"]');
 
-    window.addEventListener('message', kommo_receiveOAuthMessage, false);
-    window.addEventListener('message', kommo_receiveNewLocation, false);
-
     oauth_scripts.forEach(function (oauth_script) {
+        if (oauth_script.dataset.kommoInited === 'true') {
+            return;
+        }
+
         let client_id = oauth_script.dataset.clientId,
             state = oauth_script.dataset.state || Math.random().toString(36).substring(2),
             compact = oauth_script.dataset.compact === 'true' || false,
@@ -24,6 +29,8 @@ window.onload = function () {
             console.error('No client_id or client_secret or script tag or metadata');
             return;
         }
+
+        oauth_script.dataset.kommoInited = 'true';
 
         const button = document.createElement('div');
         const button_html = [
@@ -93,7 +100,13 @@ window.onload = function () {
         };
 
     });
-};
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', kommo_initOAuthButtons);
+} else {
+    kommo_initOAuthButtons();
+}
 
 function kommo_receiveOAuthMessage(event)
 {
