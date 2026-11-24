@@ -4,7 +4,7 @@
  * Plugin Name: Website Chat Button: Kommo integration
  * Plugin URI: https://wordpress.org/plugins/website-chat-button-kommo-integration/
  * Description: Let your customers contact you directly from your website with a chat button, conveniently manage all interactions through Kommo.
- * Version: 1.3.3
+ * Version: 1.3.4
  * Requires at least: 6.4
  * Requires PHP: 7.4
  * Author: Kommo
@@ -236,6 +236,7 @@ function kommoflash_plugin_page_content()
                 ],
                 'constants' => [
                     'kommo_url' => esc_attr(KOMMOFLASH_KOMMO_URL),
+                    'kommo_domain' => esc_attr(KommoFlashFunctions::getKommoDomain()),
                 ],
             ],
         );
@@ -247,16 +248,14 @@ function kommoflash_plugin_page_content()
 
 function kommoflash_ajax_dashboard_action()
 {
+    check_ajax_referer('kommoflash-ajax-nonce', 'nonce');
+
     $response = [];
 
     $functions = new KommoFlashFunctions();
     $functions->apiInit();
 
-    if (
-        isset($_POST['nonce'])
-        && wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['nonce'])), 'kommoflash-ajax-nonce')
-        && isset($_POST['trial_get_value'])
-    ) {
+    if (isset($_POST['trial_get_value'])) {
         $value = $functions->getAccountTrial();
         if (is_numeric($value)) {
             $response = [
@@ -273,11 +272,7 @@ function kommoflash_ajax_dashboard_action()
         }
     }
 
-    if (
-        isset($_POST['nonce'])
-        && wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['nonce'])), 'kommoflash-ajax-nonce')
-        && isset($_POST['inbox_get_count'])
-    ) {
+    if (isset($_POST['inbox_get_count'])) {
         $inbox = $functions->getAccountInbox();
         if(empty($inbox['error'])) {
             $response = [
@@ -294,11 +289,7 @@ function kommoflash_ajax_dashboard_action()
         }
     }
 
-    if (
-        isset($_POST['nonce'])
-        && wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['nonce'])), 'kommoflash-ajax-nonce')
-        && isset($_POST['auth_error_frontend_log'])
-    ) {
+    if (isset($_POST['auth_error_frontend_log'])) {
         $message = 'Frontend auth error, action: ' . sanitize_text_field(
             wp_unslash($_POST['data']['action'] ?? 'unknown')
         );
@@ -310,11 +301,7 @@ function kommoflash_ajax_dashboard_action()
         ];
     }
 
-    if (
-        isset($_POST['nonce'])
-        && wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['nonce'])), 'kommoflash-ajax-nonce')
-        && isset($_POST['dashboard_main_menu_inbox_counter_error_log'])
-    ) {
+    if (isset($_POST['dashboard_main_menu_inbox_counter_error_log'])) {
         $message = 'Dashboard get inbox count error, action: ' . sanitize_text_field(
             wp_unslash($_POST['data']['action'] ?? 'unknown')
         );
@@ -326,11 +313,7 @@ function kommoflash_ajax_dashboard_action()
         ];
     }
 
-    if (
-        isset($_POST['nonce'])
-        && wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['nonce'])), 'kommoflash-ajax-nonce')
-        && isset($_POST['logout'])
-    ) {
+    if (isset($_POST['logout'])) {
         $logout = KommoFlashFunctions::siteLogout();
         if(empty($logout['error'])) {
             $response = [
@@ -346,11 +329,7 @@ function kommoflash_ajax_dashboard_action()
             ];
         }
     }
-    if (
-        isset($_GET['nonce'])
-        && wp_verify_nonce(sanitize_text_field(wp_unslash($_GET['nonce'])), 'kommoflash-ajax-nonce')
-        && isset($_GET['button_update_db'])
-    ) {
+    if (isset($_GET['button_update_db'])) {
         $buttonState = $functions->toggleButtonVisible((int)sanitize_text_field(wp_unslash($_GET['state'] ?? '0')));
         if (empty($buttonState)) {
             $response = [
@@ -367,11 +346,7 @@ function kommoflash_ajax_dashboard_action()
         }
     }
 
-    if (
-        isset($_GET['nonce'])
-        && wp_verify_nonce(sanitize_text_field(wp_unslash($_GET['nonce'])), 'kommoflash-ajax-nonce')
-        && isset($_GET['button_get_db'])
-    ) {
+    if (isset($_GET['button_get_db'])) {
         $buttonState = $functions->getButtonVisible();
         if (empty($buttonState)) {
             $response = [
@@ -394,11 +369,7 @@ function kommoflash_ajax_dashboard_action()
         }
     }
 
-    if (
-        isset($_POST['nonce'])
-        && wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['nonce'])), 'kommoflash-ajax-nonce')
-        && isset($_POST['chat_button_select'])
-    ) {
+    if (isset($_POST['chat_button_select'])) {
         $sourceId = (int)sanitize_text_field(wp_unslash($_POST['source_id'] ?? '0'));
         $functions->apiAddOnlineChatToSource($sourceId);
         $functions->apiBindSiteToSource($sourceId);
@@ -419,11 +390,7 @@ function kommoflash_ajax_dashboard_action()
         }
     }
 
-    if (
-        isset($_POST['nonce'])
-        && wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['nonce'])), 'kommoflash-ajax-nonce')
-        && isset($_POST['chat_button_create'])
-    ) {
+    if (isset($_POST['chat_button_create'])) {
         $sourceCreated = $functions->apiCreateSourceInfo(['action' => 'chat_button_create_click']);
         $isSourceValid = $functions->checkSource($sourceCreated);
         if ($isSourceValid) {
@@ -450,11 +417,7 @@ function kommoflash_ajax_dashboard_action()
         }
     }
 
-    if (
-        isset($_POST['nonce'])
-        && wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['nonce'])), 'kommoflash-ajax-nonce')
-        && isset($_POST['get_buttons_data'])
-    ) {
+    if (isset($_POST['get_buttons_data'])) {
         $result = $functions->getButtonsData();
         $response = [
             'status'    => WP_Http::INTERNAL_SERVER_ERROR,
@@ -504,15 +467,24 @@ function kommoflash_footer()
     }
 }
 
+function kommoflash_register_admin_hooks(): void
+{
+    if (!current_user_can('manage_options')) {
+        return;
+    }
+
+    add_action('admin_menu', 'kommoflash_admin_menu');
+    add_action('admin_enqueue_scripts', 'kommoflash_admin_enqueue_scripts');
+    add_action('wp_ajax_kommo_dashboard_action', 'kommoflash_ajax_dashboard_action');
+}
+
 add_action('wp_footer', 'kommoflash_footer');
-add_action('admin_menu', 'kommoflash_admin_menu');
 
 add_action('init', 'kommoflash_init');
+add_action('init', 'kommoflash_register_admin_hooks');
 
-add_action('admin_enqueue_scripts', 'kommoflash_admin_enqueue_scripts');
 add_action('wp_enqueue_scripts', 'kommoflash_enqueue_scripts', 99);
 
-add_action('wp_ajax_kommo_dashboard_action', 'kommoflash_ajax_dashboard_action');
 add_action('activated_plugin', 'kommoflash_activated_plugin');
 
 add_action( 'rest_api_init', function () {

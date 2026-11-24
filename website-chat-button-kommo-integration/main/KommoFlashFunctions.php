@@ -239,6 +239,14 @@ class KommoFlashFunctions
 		);
     }
 
+    public static function getKommoDomain(): string
+    {
+        $kommoHost = (string) wp_parse_url(KOMMOFLASH_KOMMO_URL, PHP_URL_HOST);
+        $kommoHostParts = explode('.', $kommoHost);
+
+        return count($kommoHostParts) > 2 ? implode('.', array_slice($kommoHostParts, 1)) : $kommoHost;
+    }
+
     public static function setAccountInfo($accountInfo)
     {
         return KommoWCBOptionRepository::update(

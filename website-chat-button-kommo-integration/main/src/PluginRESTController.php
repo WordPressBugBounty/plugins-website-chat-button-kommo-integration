@@ -87,13 +87,8 @@ class PluginRESTController extends WP_REST_Controller
     {
         $jsonParams = $request->get_json_params();
         $state = esc_sql(sanitize_text_field((string)($jsonParams['state'] ?? '')));
-        $stateFromDb = urldecode(KommoFlashFunctions::getOptionValue(KommoWCBOptionsEnum::BUTTON_STATE));
 
-        if (!in_array(
-            $state,
-            [$stateFromDb . '_sign-in', $stateFromDb . '_sign-up'],
-            true
-        )) {
+        if (!self::isStateValid($state)) {
             return self::makeInvalidWPRESTResponse('state');
         }
 
@@ -111,19 +106,14 @@ class PluginRESTController extends WP_REST_Controller
         $getParams = $request->get_params();
 
         $state = esc_sql(sanitize_text_field((string)($getParams['state'] ?? '')));
-        $stateFromDb = urldecode(KommoFlashFunctions::getOptionValue(KommoWCBOptionsEnum::BUTTON_STATE));
 
-        if (!in_array(
-            $state,
-            [$stateFromDb . '_sign-in', $stateFromDb . '_sign-up'],
-            true
-        )) {
+        if (!self::isStateValid($state)) {
             return self::makeInvalidWPRESTResponse('state');
         }
 
         $referer = esc_sql(sanitize_text_field((string)($getParams['referer'] ?? '')));
 
-        if (!preg_match('/[a-zA-Z0-9\-_]*\.kommo\.com/', $referer)) {
+        if (!self::isRefererValid($referer)) {
             return self::makeInvalidWPRESTResponse('referer');
         }
 
@@ -153,6 +143,29 @@ class PluginRESTController extends WP_REST_Controller
     public static function permissionCallback(): bool
     {
         return true;
+    }
+
+    private static function isStateValid(string $state): bool
+    {
+        $stateFromDb = urldecode((string) KommoFlashFunctions::getOptionValue(KommoWCBOptionsEnum::BUTTON_STATE));
+
+        if (empty($stateFromDb) || empty($state)) {
+            return false;
+        }
+
+        return hash_equals($stateFromDb . '_sign-in', $state)
+            || hash_equals($stateFromDb . '_sign-up', $state);
+    }
+
+    private static function isRefererValid(string $referer): bool
+    {
+        $kommoDomain = KommoFlashFunctions::getKommoDomain();
+
+        if (empty($kommoDomain) || empty($referer)) {
+            return false;
+        }
+
+        return (bool) preg_match('/^[a-z0-9_-]+\.' . preg_quote($kommoDomain, '/') . '$/iD', $referer);
     }
 
     /**

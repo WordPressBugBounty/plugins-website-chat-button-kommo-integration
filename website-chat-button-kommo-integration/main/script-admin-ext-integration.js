@@ -1,10 +1,12 @@
+const KOMMO_OAUTH_SELECTOR = '[data-js-selector="kommo_oauth"]';
+
 let kommoErrorAuthFrontendExist = false;
 
 window.addEventListener('message', kommo_receiveOAuthMessage, false);
 window.addEventListener('message', kommo_receiveNewLocation, false);
 
 function kommo_initOAuthButtons() {
-    var oauth_scripts = document.querySelectorAll('[data-js-selector="kommo_oauth"]');
+    var oauth_scripts = document.querySelectorAll(KOMMO_OAUTH_SELECTOR);
 
     oauth_scripts.forEach(function (oauth_script) {
         if (oauth_script.dataset.kommoInited === 'true') {
@@ -108,8 +110,67 @@ if (document.readyState === 'loading') {
     kommo_initOAuthButtons();
 }
 
+function kommo_isKommoOrigin(url) {
+    try {
+        const kommoUrl = new URL(kommoflash_plugin_page_data.constants.kommo_url);
+        const kommoDomain = kommoflash_plugin_page_data.constants.kommo_domain;
+        const target = new URL(url);
+
+        return Boolean(kommoDomain)
+            && target.protocol === kommoUrl.protocol
+            && (target.hostname === kommoDomain || target.hostname.endsWith('.' + kommoDomain));
+    } catch {
+        return false;
+    }
+}
+
+function kommo_isTrustedOAuthMessage(event) {
+    if (!event || !event.data || typeof event.data !== 'object') {
+        return false;
+    }
+
+    if (!document.querySelector(KOMMO_OAUTH_SELECTOR)) {
+        return false;
+    }
+
+    return kommo_isKommoOrigin(event.origin);
+}
+
+function kommo_getSafeRedirectUrl(url) {
+    if (typeof url !== 'string' || url === '') {
+        return null;
+    }
+
+    const oauthScript = document.querySelector(KOMMO_OAUTH_SELECTOR);
+
+    if (!oauthScript || !oauthScript.dataset.redirect_uri) {
+        return null;
+    }
+
+    try {
+        const target = new URL(url, window.location.href);
+        const redirectUri = new URL(oauthScript.dataset.redirect_uri, window.location.href);
+
+        if (!['https:', 'http:'].includes(target.protocol)) {
+            return null;
+        }
+
+        if (target.origin !== redirectUri.origin && !kommo_isKommoOrigin(target.href)) {
+            return null;
+        }
+
+        return target.href;
+    } catch {
+        return null;
+    }
+}
+
 function kommo_receiveOAuthMessage(event)
 {
+    if (!kommo_isTrustedOAuthMessage(event)) {
+        return;
+    }
+
     kommoErrorAuthFrontendExist = false;
 
     const urlParameters = new URLSearchParams(window.location.search);
@@ -126,7 +187,7 @@ function kommo_receiveOAuthMessage(event)
     }
         signActionCurrent = signActionCurrent === 'sign-up' ? signActionCurrent : 'sign-in'
 
-    var oauth_scripts = document.querySelectorAll('[data-js-selector="kommo_oauth"]');
+    var oauth_scripts = document.querySelectorAll(KOMMO_OAUTH_SELECTOR);
 
     oauth_scripts.forEach(function (oauth_script) {
         if(signActionCurrent !== oauth_script.dataset.signAction) {
@@ -162,8 +223,12 @@ function kommo_receiveOAuthMessage(event)
 }
 
 function kommo_receiveNewLocation(event) {
+    if (!kommo_isTrustedOAuthMessage(event)) {
+        return;
+    }
+
     let windowType = 'window';
-    let locationRedirect = event.data.url;
+    let locationRedirect = kommo_getSafeRedirectUrl(event.data.url);
 
     try {
         if (targetWindowType === 'iframe') {
